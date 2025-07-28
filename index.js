@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // 👇 Cole aqui a URL do seu Webhook n8n:
-const N8N_WEBHOOK_URL = "https://raphascare.app.n8n.cloud/webhook-test/bd3d55b9-6ba2-4ab3-813a-68f28c658f81";
+const N8N_WEBHOOK_URL = "https://raphascare.app.n8n.cloud/webhook-test/e847a7d5-6c4e-46e6-bcb8-63585178efb0";
 
 app.post("/zapi", async (req, res) => {
   const from = req.body?.from || req.body?.From || "";
