@@ -8,7 +8,6 @@ app.use(express.json());
 const N8N_WEBHOOK_URL = 'https://raphascare.app.n8n.cloud/webhook/e847a7d5-6c4e-46e6-bcb8-63585178efb0';
 
 app.post('/zapi', async (req, res) => {
-  console.log('✅ Webhook recebido!');
   const body = req.body;
 
   // Ignora grupos
